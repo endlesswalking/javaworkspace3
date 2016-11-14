@@ -2,6 +2,7 @@ package hashSet;
 
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Scanner;
 import java.util.Set;
 
@@ -10,7 +11,8 @@ public class HashSet_sample
 	public static HashSet getSet(String input)
 	{
 		String[] splitInput = input.split(" ");
-		return new HashSet(Arrays.asList(splitInput));
+		List list  = Arrays.asList(splitInput);
+		return new HashSet(list);
 	}
 	
 	public static void main(String[] args)
